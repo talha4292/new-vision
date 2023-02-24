@@ -1,2 +1,375 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div id="home" class="nav">
+  <%= image_tag("background-image.png", class: "nav-bg") %>
+  <div class="nav-bg-overlay"></div>
+  <div class="navbar">
+    <div class="logo-div">
+      <%= image_tag("brand-logo.png", class: "nav-logo") %>
+    </div>
+    <div class="nav-items">
+      <a href="#home" class="nav-item">Home</a>
+      <a href="#offerings" class="nav-item">Offerings</a>
+      <a href="#industries" class="nav-item">Industries</a>
+      <a href="#partners" class="nav-item">Partners</a>
+      <a href="#testimonials" class="nav-item">Testimonials</a>
+      <a href="#insights" class="nav-item">Insights</a>
+      <a href="#company" class="nav-item">Company</a>
+      <a href="#contact" class="nav-item">Contact Us</a>
+    </div>
+  </div>
+  <div class="home">
+    <h1 class="home-text">How we transform business to unlock value</h1>
+  </div>
+  <div class="home-button">
+    <div class="button-text">Start now</div>
+  </div>
+</div>
+
+<div id="about" class="about container">
+  <div class="about-text">
+    <h1 class="about-head">About us</h1>
+    <p class="about-body">New Vision Softcom & Consultancy, is a hard and smart working IT Services Company, 
+    that excels in growing businesses of Small and Medium companies to Enterprise levels, 
+    by way of solving Business pain areas with sound technological solutions. We pride 
+    ourselves of having delivered successful projects on .NET, Java, Data Analytics, IOT 
+    & ERP solutions for almost every vertical locally and globally.....</p>
+    <div class="learn-button">
+      <div class="button-text">Learn more</div>
+    </div>
+    <div class="leader-button">
+      <div class="button-text">Leadership</div>
+    </div>
+  </div>
+  <div class="about-image-div">
+    <%= image_tag("about-image.png", class: "about-image") %>
+  </div>
+</div>
+
+<div id="offerings" class="offerings container">
+  <h1 class="about-head">Offerings</h1>
+  <p class="about-body">Services we offer</p>
+  <div class="offering-items">
+    <div class="offering-item">
+    <div class="offering-head offering-head1"></div>
+      <div class="offering-card">
+        <%= image_tag("oracle.png", class: "offering-image") %>
+        <h5 class="offering-card-head">Oracle Utilies</h5>
+        <p class="offering-card-text">Customer to Meter(C2M),Customer Care and Bolling(CC&B), 
+        Meter Data Management(MDM),Field Service(OFS),Ananlytics(OUA)</p>
+      </div>
+    </div>
+    <div class="offering-item">
+    <div class="offering-head offering-head2"></div>
+      <div class="offering-card">
+        <%= image_tag("cloud.png", class: "offering-image") %>
+        <h5 class="offering-card-head">Cloud</h5>
+        <p class="offering-card-text">Microsoft Azure, AWS</p>
+      </div>
+    </div>
+    <div class="offering-item">
+    <div class="offering-head offering-head3"></div>
+      <div class="offering-card">
+        <%= image_tag("BPM.png", class: "offering-image") %>
+        <h5 class="offering-card-head">Business Process Management</h5>
+        <p class="offering-card-text">Salesforce, PEGA, Robomagic & UI Path</p>
+      </div>
+    </div>
+    <div class="offering-item">
+      <div class="offering-head offering-head4"></div>
+      <div class="offering-card">
+        <%= image_tag("ERP.png", class: "offering-image") %>
+        <h5 class="offering-card-head">Enterprise Resource Planning</h5>
+        <p class="offering-card-text">Orcale EBS, JD Edwards, NetSuite, ODOO, SAP</p>
+      </div>
+    </div>
+  </div>
+  <div class="offerings-button">
+    <div class="button-text">View all services</div>
+  </div>
+</div>
+
+<div id="industries" class="offerings container">
+  <h1 class="about-head">Industries</h1>
+  <p class="about-body">Services we offer</p>
+  <div class="industries-items">
+    <div class="industries-item industries-item-side">
+      <%= image_tag("industry1.png", class: "industries-image") %>
+      <div class="industries-image-overlay">Business Process Management</div>
+      <div class="industries-side-overlay"></div>
+    </div>
+    <div class="industries-item industries-item-mid">
+      <%= image_tag("industry2.png", class: "industries-image") %>
+      <div class="industries-image-overlay">Financial Services</div>
+      <span class="fa fa-chevron-circle-left industries-left-icon"></span>
+      <span class="fa fa fa-chevron-circle-right industries-right-icon"></span>
+    </div>
+    <div class="industries-item industries-item-side">
+      <%= image_tag("industry3.png", class: "industries-image") %>
+      <div class="industries-image-overlay">Investements</div>
+      <div class="industries-side-overlay"></div>
+    </div>
+  </div>
+</div>
+
+<div id="partners" class="offerings partners container ">
+  <h1 class="about-head">Partners</h1>
+  <p class="about-body">At NewVision, strategic partnesrships are one of the core pillars of 
+  our business strategy. We have a 360 degree relationship with our partners and our approach 
+  is aimed at delivering unparalled value to our clients. Both NewVision and the partners share 
+  common set of cultureal values and drive common business onjectives</p>
+  <%= image_tag("partners.png", class: "partners-image") %>
+</div>
+
+<div id="testimonials" class="offerings container">
+  <h1 class="about-head">Testimonials</h1>
+  <p class="about-body">Hear it from the Industry Leaders</p>
+  <div class="testimonial-items">
+    <div class="testimonial-item">
+      <div class="rating">
+        <span class="fa fa-solid fa-quote-left quotation"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+      </div>
+      <p class="testimonial-card-text">NewVision provided great service, appropriate architecture 
+      and prompt response to issue at a reasonable rate. Their team was professional and always 
+      had a can-do attitude despite our changing needs and timelines. I hughly recommend giving 
+      them a try whether you have a POC or major application solution project on your roadmap.</p>
+      <div class="testimonial-item-bottom">
+        <%= image_tag("dp1.png", class: "dp-image") %>
+        <div class="testimonial-bottom-text">CIO, U.S.Based Corporate Wellness Company</div>
+        <div class="testimonial-bottom-icons">
+          <span class="fa fa-facebook social-icon"></span>
+          <span class="fa fa-twitter social-icon"></span>
+          <span class="fa fa-youtube social-icon"></span>
+          <span class="fa fa-instagram social-icon"></span>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-item">
+      <div class="rating">
+        <span class="fa fa-solid fa-quote-left quotation"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+      </div>
+      <p class="testimonial-card-text">I would like to take my hats off for one of the best tean 
+      that I have worked with. Asim Noise, Anmol, and their team members were exceptional in 
+      supporting , analyzing , and delivering our project, from start to end. Their work has made 
+      a significant different to our business. I hope them the best and will definitely work with 
+      them in the future as need be.</p>
+      <div class="testimonial-item-bottom">
+        <%= image_tag("dp2.png", class: "dp-image") %>
+        <div class="testimonial-bottom-text">COO, The Baker, Saudi Arabia</div>
+        <div class="testimonial-bottom-icons">
+          <span class="fa fa-facebook social-icon"></span>
+          <span class="fa fa-twitter social-icon"></span>
+          <span class="fa fa-youtube social-icon"></span>
+          <span class="fa fa-instagram social-icon"></span>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-item">
+      <div class="rating">
+        <span class="fa fa-solid fa-quote-left quotation"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+      </div>
+      <p class="testimonial-card-text">NewVision has done an excellent job in SAP implementation and 
+      integration with our POS. We really see value from our investements and the partner</p>
+      <div class="testimonial-item-bottom">
+        <%= image_tag("dp3.png", class: "dp-image") %>
+        <div class="testimonial-bottom-text">CEO, Rajgreen Group</div>
+        <div class="testimonial-bottom-icons">
+          <span class="fa fa-facebook social-icon"></span>
+          <span class="fa fa-twitter social-icon"></span>
+          <span class="fa fa-youtube social-icon"></span>
+          <span class="fa fa-instagram social-icon"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="offerings-button testimonials-button">
+    <div class="button-text">More testimonials</div>
+  </div>
+</div>
+
+<div id="blogs" class="offerings container">
+  <h1 class="about-head blogs-head">Blogs
+    <div class="blogs-heading-button">
+      <div class="button-text">Show all >></div>
+    </div>
+  </h1>
+  <div class="blogs-items">
+    <div class="blogs-item">
+      <div class="blogs-card">
+        <%= image_tag("industry1.png", class: "blogs-card-image") %>
+        <div class="blogs-item-bottom">
+          <div class="blogs-item-body-head">
+            <p class="blogs-item-date">On 12 Aug, 2020</p>
+            <p class="blogs-item-read">6 min read</p>
+          </div>
+          <p class="blogs-item-body">5 Signs that Your Enterprise Apps Need to be Upgraded and Modernized</p>
+          <div class="blogs-item-button">
+            <div class="button-text">Read more</div>
+          </div>
+        </div>
+      </div>
+      <div class="blogs-tail blogs-tail1"></div>
+    </div>
+    <div class="blogs-item">
+      <div class="blogs-card">
+        <%= image_tag("industry3.png", class: "blogs-card-image") %>
+        <div class="blogs-item-bottom">
+          <div class="blogs-item-body-head">
+            <p class="blogs-item-date">On 12 Aug, 2020</p>
+            <p class="blogs-item-read">6 min read</p>
+          </div>
+          <p class="blogs-item-body">Importance of Process Discovery in RPA and impact ROI</p>
+          <div class="blogs-item-button">
+            <div class="button-text">Read more</div>
+          </div>
+        </div>
+      </div>
+      <div class="blogs-tail blogs-tail2"></div>
+    </div>
+  </div>
+</div>
+
+<div id="news" class="offerings container">
+  <h1 class="about-head blogs-head">News
+    <div class="blogs-heading-button">
+      <div class="button-text">Show all >></div>
+    </div>
+  </h1>
+  <div class="news-card">
+    <div class="news-card-image">
+      <%= image_tag("news1.png", class: "news-image") %>
+    </div>
+    <div class="news-card-body">
+      <h2 class="news-body-head">NewVisions continues hiring even during the pandemic due to increased repeat business</h2>
+      <p class="news-body-date">10 September, 2021</p>
+    </div>
+  </div>
+  <div class="news-card">
+    <div class="news-card-image">
+      <%= image_tag("news2.png", class: "news-image") %>
+    </div>
+    <div class="news-card-body">
+      <h2 class="news-body-head">NewVision successfully completed delivery of Oracle Utilities Solution for a major 
+      international electricity and water company</h2>
+      <p class="news-body-date">03 September, 2021</p>
+    </div>
+  </div>
+</div>
+
+<div id="events" class="offerings container">
+  <h1 class="about-head blogs-head">Featured Events
+    <div class="blogs-heading-button">
+      <div class="button-text">Show all >></div>
+    </div>
+  </h1>
+  <div class="news-card">
+    <div class="news-card-image">
+      <%= image_tag("events1.png", class: "news-image") %>
+    </div>
+    <div class="news-card-body">
+      <h2 class="news-body-head">Comprehensive Healthcare Management for insurance & healthcare industries on PEGA Decision Hub</h2>
+      <p class="news-body-date">23 September, 2021</p>
+    </div>
+  </div>
+  <div class="news-card">
+    <div class="news-card-image">
+      <%= image_tag("events2.png", class: "news-image") %>
+    </div>
+    <div class="news-card-body">
+      <h2 class="news-body-head">Webinar - Transforming Utilities (Water, Gas , Power) with RPA (Robotic Process Automation)</h2>
+      <p class="news-body-date">03 December, 2021</p>
+    </div>
+  </div>
+</div>
+
+<div id="contact" class="offerings container">
+  <h1 class="about-head">Contact Us</h1>
+  <p class="about-body">Questions ? We will put you on the right path.</p>
+  <div class="contacts-items">
+    <div class="contacts-item-left">
+      <div class="contact-card-head">Contact Us</div>
+      <input class="contact-input" type="text" id="name" name="name" placeholder="Your Name">
+      <input class="contact-input" type="text" id="email" name="email" placeholder="Your Email">
+      <textarea class="contact-textarea" type="text" id="message" name="message" placeholder="Your Message"></textarea>
+      <div class="contact-button">
+        <div class="button-text">Send</div>
+      </div>
+    </div>
+    <div class="contacts-item-right">
+      <div class="contacts-info-body1">
+        <i class="fa fa-map-marker contacts-info-icon"></i>
+        <p class="contact-info-text">602, Pentagon Tower 1, Magarpatla City, Hadapsar, Pune India</p>
+      </div>
+      <div class="contacts-info-body2">
+        <i class="fa fa-mobile-phone contacts-info-icon"></i>
+        <p class="contact-info-text">+91 8956001836</p>
+      </div>
+      <div class="contacts-info-body2">
+        <i class="fa fa-envelope contacts-info-icon"></i>
+        <p class="contact-info-text">contact@newvisionsoftware.in</p>
+      </div>
+      <%= image_tag("map.png", class: "contacts-map") %>
+      <div class="contacts-social-icons">
+        <span class="fa fa-twitter social-icon"></span>
+        <span class="fa fa-facebook social-icon"></span>
+        <span class="fa fa-linkedin social-icon"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="footer-top">
+    <div class="footer-item footer-body-text">
+      <h3 class="footer-head-text">Our Offerings</h3>
+      <p>Software Product Engineering</p>
+      <p>Business Process management</p>
+      <p>Cloud</p>
+      <p>DevOps</p>
+      <p>QA Automation</p>
+      <p>Data</p>
+      <p>Utilities</p>
+    </div>
+    <div class="footer-item footer-body-text">
+      <h3 class="footer-head-text">Industries</h3>
+      <p>Insurance</p>
+      <p>Financial Services</p>
+      <p>Energy</p>
+      <p>Healthcare</p>
+      <p>Telecom</p>
+      <p>Government</p>
+    </div>
+    <div class="footer-item footer-body-text">
+      <h3 class="footer-head-text">Resources</h3>
+      <p>Events</p>
+      <p>Blog</p>
+      <p>Newsroom</p>
+      <p>Articles</p>
+      <p>Case Studies</p>
+    </div>
+    <div class="footer-item footer-body-text">
+      <h3 class="footer-head-text">Company</h3>
+      <p>About Us</p>
+      <p>Leadership </p>
+      <p>People and Culture</p>
+      <p>Terms and conditions</p>
+      <p>Sitemap</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-bottom-text">Copyright © 2021 - New Vision Softcom & Consultancy Pvt. Ltd</p>
+  </div>
+</div>
